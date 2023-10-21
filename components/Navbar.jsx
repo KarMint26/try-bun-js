@@ -65,10 +65,8 @@ const Navbar = () => {
         </>
       ) : (
         <>
-          <div>
-            <div className="photo-url w-[50px] h-[50px] rounded-full">
-              <Image src={user.photoURL} alt="user-photo" width={80} height={80} className="w-[50px] h-[50px] rounded-full" />
-            </div>
+          <div className="flex justify-center items-center gap-3">
+            <h1>{user.displayName}</h1>
             <p className="cursor-pointer" onClick={handleSignOut}>
               Sign Out
             </p>
